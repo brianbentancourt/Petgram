@@ -1,0 +1,137 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/bin/node', '/usr/bin/npm', 'i', '-g', 'now' ]
+2 info using npm@3.5.2
+3 info using node@v8.10.0
+4 silly loadCurrentTree Starting
+5 silly install loadCurrentTree
+6 silly install readGlobalPackageData
+7 silly fetchPackageMetaData now
+8 silly fetchNamedPackageData now
+9 silly mapToRegistry name now
+10 silly mapToRegistry using default registry
+11 silly mapToRegistry registry https://registry.npmjs.org/
+12 silly mapToRegistry uri https://registry.npmjs.org/now
+13 verbose request uri https://registry.npmjs.org/now
+14 verbose request no auth needed
+15 info attempt registry request try #1 at 20:39:31
+16 verbose request id a180443b758d7f3d
+17 http request GET https://registry.npmjs.org/now
+18 http 200 https://registry.npmjs.org/now
+19 verbose headers { date: 'Fri, 19 Jul 2019 23:39:33 GMT',
+19 verbose headers   'content-type': 'application/json',
+19 verbose headers   'transfer-encoding': 'chunked',
+19 verbose headers   connection: 'keep-alive',
+19 verbose headers   'set-cookie':
+19 verbose headers    [ '__cfduid=db6e0694bb0790e17a659989ab95313671563579571; expires=Sat, 18-Jul-20 23:39:31 GMT; path=/; domain=.npmjs.org; HttpOnly' ],
+19 verbose headers   'cf-cache-status': 'MISS',
+19 verbose headers   'cache-control': 'max-age=300',
+19 verbose headers   'cf-ray': '4f9089029dded2bc-EZE',
+19 verbose headers   etag: 'W/"2bd97839151fe26aef37a75c30fc0c6b"',
+19 verbose headers   'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+19 verbose headers   'last-modified': 'Fri, 19 Jul 2019 20:44:29 GMT',
+19 verbose headers   vary: 'accept-encoding, accept',
+19 verbose headers   'x-amz-meta-rev': '965-00e83e2bd8f24ceda08bace70cb92c26',
+19 verbose headers   server: 'cloudflare',
+19 verbose headers   'content-encoding': 'gzip' }
+20 silly get cb [ 200,
+20 silly get   { date: 'Fri, 19 Jul 2019 23:39:33 GMT',
+20 silly get     'content-type': 'application/json',
+20 silly get     'transfer-encoding': 'chunked',
+20 silly get     connection: 'keep-alive',
+20 silly get     'set-cookie':
+20 silly get      [ '__cfduid=db6e0694bb0790e17a659989ab95313671563579571; expires=Sat, 18-Jul-20 23:39:31 GMT; path=/; domain=.npmjs.org; HttpOnly' ],
+20 silly get     'cf-cache-status': 'MISS',
+20 silly get     'cache-control': 'max-age=300',
+20 silly get     'cf-ray': '4f9089029dded2bc-EZE',
+20 silly get     etag: 'W/"2bd97839151fe26aef37a75c30fc0c6b"',
+20 silly get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+20 silly get     'last-modified': 'Fri, 19 Jul 2019 20:44:29 GMT',
+20 silly get     vary: 'accept-encoding, accept',
+20 silly get     'x-amz-meta-rev': '965-00e83e2bd8f24ceda08bace70cb92c26',
+20 silly get     server: 'cloudflare',
+20 silly get     'content-encoding': 'gzip' } ]
+21 verbose get saving now to /home/brian/.npm/registry.npmjs.org/now/.cache.json
+22 silly install normalizeTree
+23 silly loadCurrentTree Finishing
+24 silly loadIdealTree Starting
+25 silly install loadIdealTree
+26 silly cloneCurrentTree Starting
+27 silly install cloneCurrentTreeToIdealTree
+28 silly cloneCurrentTree Finishing
+29 silly loadShrinkwrap Starting
+30 silly install loadShrinkwrap
+31 silly loadShrinkwrap Finishing
+32 silly loadAllDepsIntoIdealTree Starting
+33 silly install loadAllDepsIntoIdealTree
+34 silly resolveWithNewModule now@15.8.5 checking installable status
+35 silly cache add args [ 'now', null ]
+36 verbose cache add spec now
+37 silly cache add parsed spec Result {
+37 silly cache add   raw: 'now',
+37 silly cache add   scope: null,
+37 silly cache add   name: 'now',
+37 silly cache add   rawSpec: '',
+37 silly cache add   spec: 'latest',
+37 silly cache add   type: 'tag' }
+38 silly addNamed now@latest
+39 verbose addNamed "latest" is being treated as a dist-tag for now
+40 info addNameTag [ 'now', 'latest' ]
+41 silly mapToRegistry name now
+42 silly mapToRegistry using default registry
+43 silly mapToRegistry registry https://registry.npmjs.org/
+44 silly mapToRegistry uri https://registry.npmjs.org/now
+45 verbose addNameTag registry:https://registry.npmjs.org/now not in flight; fetching
+46 verbose get https://registry.npmjs.org/now not expired, no request
+47 silly addNameTag next cb for now with tag latest
+48 silly addNamed now@15.8.5
+49 verbose addNamed "15.8.5" is a plain semver version for now
+50 silly mapToRegistry name now
+51 silly mapToRegistry using default registry
+52 silly mapToRegistry registry https://registry.npmjs.org/
+53 silly mapToRegistry uri https://registry.npmjs.org/now
+54 verbose addRemoteTarball https://registry.npmjs.org/now/-/now-15.8.5.tgz not in flight; adding
+55 verbose addRemoteTarball [ 'https://registry.npmjs.org/now/-/now-15.8.5.tgz',
+55 verbose addRemoteTarball   '1201ad17d8f21f41455e5aeaf879def711beb3c5' ]
+56 info retry fetch attempt 1 at 20:39:35
+57 info attempt registry request try #1 at 20:39:35
+58 http fetch GET https://registry.npmjs.org/now/-/now-15.8.5.tgz
+59 http fetch 200 https://registry.npmjs.org/now/-/now-15.8.5.tgz
+60 silly fetchAndShaCheck shasum 1201ad17d8f21f41455e5aeaf879def711beb3c5
+61 verbose addTmpTarball /tmp/npm-9383-8cc621fc/registry.npmjs.org/now/-/now-15.8.5.tgz not in flight; adding
+62 verbose addTmpTarball already have metadata; skipping unpack for now@15.8.5
+63 silly cache afterAdd now@15.8.5
+64 verbose afterAdd /home/brian/.npm/now/15.8.5/package/package.json not in flight; writing
+65 verbose afterAdd /home/brian/.npm/now/15.8.5/package/package.json written
+66 silly loadAllDepsIntoIdealTree Finishing
+67 silly idealTree:prePrune lib
+67 silly idealTree:prePrune └── now@15.8.5
+68 silly loadIdealTree Finishing
+69 silly currentTree lib
+70 silly idealTree lib
+70 silly idealTree └── now@15.8.5
+71 silly generateActionsToTake Starting
+72 silly install generateActionsToTake
+73 warn checkPermissions Missing write access to /usr/local/lib/node_modules
+74 silly rollbackFailedOptional Starting
+75 silly rollbackFailedOptional Finishing
+76 silly runTopLevelLifecycles Starting
+77 silly runTopLevelLifecycles Finishing
+78 silly install printInstalled
+79 verbose stack Error: EACCES: permission denied, access '/usr/local/lib/node_modules'
+80 verbose cwd /home/brian/Documentos/petgram
+81 error Linux 4.18.0-25-generic
+82 error argv "/usr/bin/node" "/usr/bin/npm" "i" "-g" "now"
+83 error node v8.10.0
+84 error npm  v3.5.2
+85 error path /usr/local/lib/node_modules
+86 error code EACCES
+87 error errno -13
+88 error syscall access
+89 error Error: EACCES: permission denied, access '/usr/local/lib/node_modules'
+89 error  { Error: EACCES: permission denied, access '/usr/local/lib/node_modules'
+89 error   errno: -13,
+89 error   code: 'EACCES',
+89 error   syscall: 'access',
+89 error   path: '/usr/local/lib/node_modules' }
+90 error Please try running this command again as root/Administrator.
+91 verbose exit [ -13, true ]
