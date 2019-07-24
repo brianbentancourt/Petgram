@@ -1,13 +1,13 @@
 import React from 'react'
 import { ListOfCategories } from './components/listOfCategories'
 import { GlobalStyle } from './globalStyles'
-import { PhotoCard } from './components/photoCard'
+import { ListOfPhotoCards } from './components/listOfPhotoCard'
 
 export const App = () => (
   <React.Fragment>
     <GlobalStyle />
     <ListOfCategories />
-    <PhotoCard />
+    <ListOfPhotoCards />
   </React.Fragment>
 
 )
