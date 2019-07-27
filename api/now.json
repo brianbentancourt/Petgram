@@ -2,7 +2,7 @@
   "version": 2,
   "name": "petgram-server-brian",
   "alias": [
-    "petgram-api-brian"
+    "petgram-server-brian"
   ],
   "builds": [
     {
