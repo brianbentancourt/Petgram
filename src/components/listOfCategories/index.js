@@ -40,7 +40,7 @@ export const ListOfCategories = () => {
     <List fixed={fixed}>
       {
         loading
-          ? <Spinner />
+          ? <Spinner size={50} />
           : categories.map(category => <Item key={category.id}><Category {...category} /></Item>)
       }
     </List>

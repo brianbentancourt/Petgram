@@ -45,4 +45,6 @@ export const Circle = styled.circle`
 
 export const Svg = styled.svg`
   animation: 2s linear infinite ${loadingSvg};
+  align-items: center;
+  width: 100%
 `
