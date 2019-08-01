@@ -1,7 +1,7 @@
 import React from 'react'
 import { ListOfCategories } from './components/listOfCategories'
 import { GlobalStyle } from './styles/globalStyles'
-import { ListOfPhotoCards } from './components/listOfPhotoCard'
+import { ListOfPhotoCards } from './containers/ListOfPhotoCards'
 import { Logo } from './components/logo'
 
 export const App = () => (
@@ -9,7 +9,7 @@ export const App = () => (
     <GlobalStyle />
     <Logo />
     <ListOfCategories />
-    <ListOfPhotoCards />
+    <ListOfPhotoCards categoryId={2} />
   </React.Fragment>
 
 )
