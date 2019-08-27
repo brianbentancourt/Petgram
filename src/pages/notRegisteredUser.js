@@ -2,6 +2,7 @@ import React, { Fragment } from 'react'
 import Context from '../context'
 import { UserForm } from '../components/userForm'
 import { RegisterMutation } from '../containers/RegisterMutation'
+import { LoginMutation } from '../containers/LoginMutation'
 
 export const NotRegisteredUser = () => (
   <Context.Consumer>
@@ -24,7 +25,21 @@ export const NotRegisteredUser = () => (
             }
           </RegisterMutation>
 
-          <UserForm title='Iniciar sesión' onSubmit={activateAuth} />
+          <LoginMutation>
+            {
+              (login, { data, loading, error }) => {
+                const onSubmit = ({ email, password }) => {
+                  const input = { email, password }
+                  const variables = { input }
+                  login({ variables }).then(activateAuth)
+                }
+
+                const errorMsg = error && 'Error de login'
+
+                return <UserForm disabled={loading} error={errorMsg} title='Iniciar sesión' onSubmit={onSubmit} />
+              }
+            }
+          </LoginMutation>
         </Fragment>
       }
     }
