@@ -10,8 +10,7 @@ import { Favs } from './pages/favs'
 import { NotRegisteredUser } from './pages/notRegisteredUser'
 
 import { NavBar } from './components/navBar'
-
-const UserLogged = ({ children }) => children({ isAuth: false })
+import Context from './context'
 
 export const App = () => {
   // const urlParams = new window.URLSearchParams(window.location.search)
@@ -26,7 +25,7 @@ export const App = () => {
         <Home path='/pet/:id' />
         <Detail path='/detail/:detailId' />
       </Router>
-      <UserLogged>
+      <Context.Consumer>
         {
           ({ isAuth }) =>
             isAuth
@@ -39,7 +38,7 @@ export const App = () => {
                 <NotRegisteredUser path='/user' />
               </Router>
         }
-      </UserLogged>
+      </Context.Consumer>
       <NavBar />
     </Fragment>
   )
